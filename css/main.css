@@ -1,0 +1,294 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #FAFAFA;
+}
+
+.container {}
+
+.title-header {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: #2B2F39;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+
+}
+
+.title-header img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.search {
+    height: 48px;
+    background: #ffffff;
+    margin: 0 10px;
+}
+
+.search input {
+    border-radius: 6px;
+    border: none;
+
+    position: absolute;
+    height: 48px;
+    margin: 0 10px;
+    width: 85%;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 0.0025em;
+
+    /* Text - Regular */
+
+    color: #2B2F39;
+
+
+}
+
+.search input:focus-visible,
+.search input:focus-visible {
+    border: none;
+    outline: none
+}
+
+.search img {
+
+    position: relative;
+    left: calc(100% - 30px);
+    top: 15px;
+    cursor: pointer;
+
+}
+
+.list {
+    margin-top: 10px;
+    height: calc(100vh - 180px);
+    overflow-y: auto;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.item {
+
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+
+}
+
+.thumb-part {
+
+    flex-direction: column;
+    height: 74px;
+
+
+}
+
+.thumb-part img {
+    border-radius: 6px;
+    width: 132px;
+    height: 74px;
+}
+
+.title {
+    flex-direction: column;
+    flex: auto;
+    height: 74px;
+    padding-left: 10px;
+
+}
+
+.video-title {
+    margin: 0;
+    height: 32px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    /* or 114% */
+
+    letter-spacing: 0.0025em;
+
+    /* Text - Regular */
+
+    color: #2B2F39;
+    overflow: hidden;
+}
+
+.signer {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 0.0025em;
+
+    /* Icon - Regular */
+
+    color: #9499A6;
+    margin: 10px 0;
+}
+
+.title-bottom {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 0.0025em;
+
+    /* Text - Sub Reg */
+
+    color: #5D6067;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.yt-brand {}
+
+.views {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px;
+    /* identical to box height, or 100% */
+
+    text-align: right;
+    letter-spacing: 0.0025em;
+
+    /* Text - Sub Reg */
+
+    color: #5D6067;
+
+}
+
+.next {
+    height: 48px;
+    background: #ffffff;
+    margin: 0 10px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+    letter-spacing: 0.0025em;
+
+    /* Text - Regular */
+
+    color: #2B2F39;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between
+}
+
+.next div {
+    flex: 1;
+    justify-content: center;
+}
+
+.page-change-btn {
+
+    display: flex;
+}
+
+
+.modal-pop {
+    background-color: rgb(0 0 0 / 90%);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.modal-pop {
+    display: none;
+}
+
+.popup-controls {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: absolute;
+    width: calc(100% - 20px);
+    bottom: 15px;
+
+}
+
+.modal-pop iframe {
+    width: 100%;
+    height: 250px;
+    margin-top: calc(50vh - 125px);
+
+
+}
+
+.visit {
+    width: 80px;
+    height: 34px;
+
+    background: #2A8CFF;
+    border-radius: 20px;
+    color: #ffff;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+
+}
+
+.close {
+    width: 87px;
+    height: 34px;
+
+    /* Text - Sub Reg */
+
+    background: #5D6067;
+    border-radius: 20px;
+    color: #ffff;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+
+}

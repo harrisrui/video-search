@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Video Search Engine</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap">
+   <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-header">
+
+            <img src="./images/Squircle.png" />
+            <span>
+                Simple Video Search Engine
+            </span>
+
+        </div>
+        <div class="search">
+            <input type="text" value="" id="search-term" />
+            <img src="./images/Search.png" onclick="search()" />
+        </div>
+
+        <div class="list" id="list">
+        </div>
+        <div class="next">
+            <div class="page-change-btn" id="prev-button" onclick="goToPrevPage()">
+                <img src="./images/Icons.png" style="margin-right: 5px; rotate: 180deg;" />
+                <span>
+                    Previous
+                </span>
+            </div>
+            <div class="current-page" id="current-page">
+
+
+            </div>
+            <div class="page-change-btn" id="next-button" onclick="goToNextPage()">
+                <span>
+
+                    Next
+                </span>
+                <img src="./images/Icons.png" style="margin-left: 5px;" />
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-pop" id="modal-pop">
+        <iframe id="display-video" src="" type="video/mp4" width="420" height="315" frameborder="0"
+            allowfullscreen></iframe>
+
+        <div class="popup-controls">
+
+            <div class="visit" onclick="visitVideo()">
+                visit
+            </div>
+            <div class="close" onclick="closeModal()">
+                close
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
